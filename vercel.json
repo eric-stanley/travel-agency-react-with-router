@@ -1,8 +1,19 @@
 {
+  "framework": "vite",
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build"
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build/client/assets"
+      }
+    },
+    {
+      "src": "build/server/index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["build/client/**/*"]
+      }
     }
   ],
   "routes": [
