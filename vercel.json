@@ -14,12 +14,12 @@
   ],
   "routes": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/build/client/assets/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/build/server/index.js"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/build/client/assets/$1"
     }
   ]
 }
