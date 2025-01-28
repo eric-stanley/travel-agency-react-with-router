@@ -1,6 +1,20 @@
 {
   "builds": [
     {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build/client/assets"
+      }
+    },
+    {
+      "src": "build/client/favicon",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build/client"
+      }
+    },
+    {
       "src": "build/server/index.js",
       "use": "@vercel/node"
     }
@@ -8,7 +22,11 @@
   "routes": [
     {
       "src": "/assets/(.*)",
-      "dest": "/build/server/assets/$1"
+      "dest": "/build/client/assets/$1"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/build/client/favicon"
     },
     {
       "src": "/(.*)",
