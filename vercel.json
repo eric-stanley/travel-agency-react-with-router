@@ -1,24 +1,18 @@
 {
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build/client/assets"
-      }
-    },
-    {
       "src": "build/server/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "distDir": "build/server"
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
+      "src": "/assets/(.*)",
+      "dest": "/build/server/assets/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/index.js"
+      "dest": "/build/server/index.js"
     }
   ]
 }
