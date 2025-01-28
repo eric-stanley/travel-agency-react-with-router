@@ -52,9 +52,9 @@ const List1: FC<List1Props> = ({ data }) => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {data.map((item) => (
+            {data.map((item, index) => (
               <TableRow
-                key={item.category}
+                key={index}
                 className="hover:bg-popover hover:text-popover-foreground focus:bg-popover focus:text-popover-foreground"
               >
                 <TableCell className="">
