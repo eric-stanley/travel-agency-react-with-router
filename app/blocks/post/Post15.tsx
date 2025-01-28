@@ -1,5 +1,3 @@
-"use client";
-
 import { Lightbulb } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
