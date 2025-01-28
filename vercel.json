@@ -9,7 +9,10 @@
     },
     {
       "src": "build/server/index.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "distDir": "build/server"
+      }
     }
   ],
   "routes": [
