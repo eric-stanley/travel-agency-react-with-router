@@ -1,3 +1,4 @@
+import path from "path-browserify";
 import { reactRouter } from "@react-router/dev/vite";
 import autoprefixer from "autoprefixer";
 import tailwindcss from "tailwindcss";
@@ -11,4 +12,16 @@ export default defineConfig({
     },
   },
   plugins: [reactRouter(), tsconfigPaths()],
+  server: {
+    open: true,
+  },
+  ssr: {
+    // Add any SSR-specific settings here
+    noExternal: ["react-icons"], // Example of including external dependencies
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 });

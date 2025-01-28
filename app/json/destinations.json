@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Destination 1",
+    "path": "/routes/destinations/destination001"
+  },
+  {
+    "title": "Destination 2",
+    "path": "/routes/destinations/destination002"
+  }
+]
