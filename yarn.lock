@@ -2353,6 +2353,15 @@
     "@vercel/static-config" "3.0.0"
     ts-morph "12.0.0"
 
+"@vercel/remix@^2.15.2":
+  version "2.15.2"
+  resolved "https://registry.yarnpkg.com/@vercel/remix/-/remix-2.15.2.tgz#f8bec8996cf27bb9c0b3f77ca2f79f69dbe34ba2"
+  integrity sha512-JZJmuM/pZl5zLACRHzq2uOamzTOeiKRnco0o07A+hUxTKemhS1tqc2R9PdQ6Mf/8ZcXY5ZxW5tah3zjBea6D4w==
+  dependencies:
+    "@vercel/static-config" "3.0.0"
+    isbot "^3.6.8"
+    ts-morph "12.0.0"
+
 "@vercel/routing-utils@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@vercel/routing-utils/-/routing-utils-5.0.0.tgz#0878d8d17e124128c197fb0ff1217f7fa3d31442"
@@ -4717,6 +4726,11 @@ isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz"
   integrity sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==
+
+isbot@^3.6.8:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/isbot/-/isbot-3.8.0.tgz#b1f8e3d19aca0961b5ed27b62bb8bb0a275781e4"
+  integrity sha512-vne1mzQUTR+qsMLeCBL9+/tgnDXRyc2pygLGl/WsgA+EZKIiB5Ehu0CiVTHIIk30zhJ24uGz4M5Ppse37aR0Hg==
 
 isbot@^5.1.17:
   version "5.1.21"
