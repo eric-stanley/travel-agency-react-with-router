@@ -4,6 +4,7 @@ import { useState, useEffect, type SetStateAction } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Separator } from "~/components/ui/separator";
 
+const categories = ["All", "Design", "Development", "Marketing"];
 const blogs = [
   {
     title: "How to design a website from scratch",
@@ -93,22 +94,20 @@ const Blog11 = () => {
             <Separator />
             <nav>
               <ul className="flex flex-wrap items-center justify-center gap-4 lg:flex-col lg:items-start lg:gap-2">
-                {["All", "Design", "Development", "Marketing"].map(
-                  (category, index) => (
-                    <li
-                      key={index}
-                      className={`font-medium ${
-                        selectedCategory === category
-                          ? "text-primary"
-                          : "text-muted-foreground hover:text-primary"
-                      }`}
-                    >
-                      <a href="#" onClick={() => setSelectedCategory(category)}>
-                        {category}
-                      </a>
-                    </li>
-                  )
-                )}
+                {categories.map((category, index) => (
+                  <li
+                    key={index}
+                    className={`font-medium ${
+                      selectedCategory === category
+                        ? "text-primary"
+                        : "text-muted-foreground hover:text-primary"
+                    }`}
+                  >
+                    <a href="#" onClick={() => setSelectedCategory(category)}>
+                      {category}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </nav>
           </header>
