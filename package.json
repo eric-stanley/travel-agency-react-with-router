@@ -41,6 +41,7 @@
     "shadcn": "^2.1.8",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
+    "vercel": "^39.3.0",
     "vite-plugin-ssr": "^0.4.142"
   },
   "devDependencies": {
