@@ -5,24 +5,23 @@ import tailwindcss from "tailwindcss";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-export default defineConfig(({ isSsrBuild, command }) => ({
-  build: {
-    rollupOptions: isSsrBuild
-      ? {
-          input: "./server/app.ts",
-        }
-      : undefined,
-  },
+export default defineConfig({
   css: {
     postcss: {
       plugins: [tailwindcss, autoprefixer],
     },
   },
-  ssr: {
-    noExternal: command === "build" ? true : undefined,
-  },
   plugins: [reactRouter(), tsconfigPaths()],
   server: {
     open: true,
   },
-}));
+  ssr: {
+    // Add any SSR-specific settings here
+    noExternal: ["react-icons"], // Example of including external dependencies
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+});
