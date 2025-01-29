@@ -18,6 +18,7 @@ export default defineConfig({
   ssr: {
     // Add any SSR-specific settings here
     noExternal: ["react-icons"], // Example of including external dependencies
+    external: ["gray-matter", "path-browserify", "react-icons", "react-markdown", "remark", "remark-html", "shadcn", "tailwindcss-animate"
   },
   resolve: {
     alias: {
