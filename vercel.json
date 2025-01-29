@@ -1,10 +1,6 @@
 {
   "routes": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/build/client/assets/$1"
-    },
-    {
       "src": "/favicon.ico",
       "dest": "/build/client/favicon.ico"
     },
@@ -12,5 +8,12 @@
       "src": "/(.*)",
       "dest": "/build/server/index.js"
     }
-  ]
+  ],
+  "middleware": false,
+  "functions": {
+    "index": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
 }
