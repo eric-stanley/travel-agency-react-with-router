@@ -10,7 +10,7 @@
     },
     {
       "src": "build/server/index.js",
-      "use": "@vercel/node",
+      "use": "@react-router-serve",
       "config": {
         "includeFiles": ["build/client/**/*"]
       }
