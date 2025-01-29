@@ -3,9 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build && node build/server/index.js",
+    "build": "react-router build",
     "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
+    "build-react": "react-router build",
+    "build-vite": "vite build",
+    "vercel-build": "vite build",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
