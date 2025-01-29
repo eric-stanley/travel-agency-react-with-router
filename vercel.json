@@ -1,5 +1,4 @@
 {
-  "framework": "remix",
   "builds": [
     {
       "src": "package.json",
