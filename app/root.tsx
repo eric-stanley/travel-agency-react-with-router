@@ -30,7 +30,7 @@ const ignoreErrorList = ["A tree hydrated", "In HTML,"];
 console.error = (...args) => {
   const errorMessage = args[0]?.toString();
   const shouldIgnoreError = ignoreErrorList.some((ignoredError) =>
-    errorMessage.includes(ignoredError)
+    errorMessage.includes(ignoredError),
   );
   if (shouldIgnoreError) {
     // console.log("Suppressed error:", ...args);
