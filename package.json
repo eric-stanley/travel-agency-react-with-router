@@ -7,7 +7,7 @@
     "dev": "react-router dev",
     "build-react": "react-router build",
     "build-vite": "vite build",
-    "vercel-build": "vite build",
+    "vercel-build": "react-router build",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
