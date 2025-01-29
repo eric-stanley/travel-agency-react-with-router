@@ -1,12 +1,9 @@
 {
-  "framework": "vite",
+  "framework": "react-router",
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build/client/assets"
-      }
+      "use": "@vercel/static"
     },
     {
       "src": "build/server/index.js",

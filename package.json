@@ -8,6 +8,7 @@
     "build-react": "react-router build",
     "build-vite": "vite build",
     "vercel-build": "react-router build",
+    "start-server": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
