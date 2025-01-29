@@ -1,17 +1,4 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "build/server/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["build/client/**/*"]
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/assets/(.*)",
