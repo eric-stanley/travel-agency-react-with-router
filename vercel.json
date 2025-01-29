@@ -9,7 +9,6 @@
       "dest": "/build/server/index.js"
     }
   ],
-  "middleware": false,
   "functions": {
     "index": {
       "memory": 1024,
