@@ -23,7 +23,7 @@
     },
     {
       "src": "/favicon.ico",
-      "dest": "/build/client"
+      "dest": "/build/client/favicon.ico"
     },
     {
       "src": "/(.*)",
